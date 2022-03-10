@@ -1,5 +1,5 @@
-@mixin focus {
-  outline: 2px outset $focusOutlineColor;
+@mixin focus($outlineColor) {
+  outline: 2px outset $outlineColor;
   outline-offset: 2px;
 }
 
