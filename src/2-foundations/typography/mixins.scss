@@ -1,0 +1,98 @@
+@mixin h1-typography {
+  font-size: toREM(56px);
+  line-height: toEM(72px);
+  letter-spacing: normal;
+  font-weight: map-get($fontWeightData, 'regular');
+  font-family: map-get($fontFamilies, 'secondary');
+}
+
+@mixin h2-typography {
+  font-size: toREM(40px);
+  line-height: toEM(56px);
+  letter-spacing: normal;
+  font-weight: map-get($fontWeightData, 'regular');
+  font-family: map-get($fontFamilies, 'secondary');
+}
+
+@mixin h3-typography {
+  font-size: toREM(28px);
+  line-height: toEM(40px);
+  letter-spacing: normal;
+  font-weight: map-get($fontWeightData, 'regular');
+  font-family: map-get($fontFamilies, 'secondary');
+}
+
+@mixin h4-typography {
+  font-size: toREM(26px);
+  line-height: toEM(32px);
+  letter-spacing: normal;
+  font-weight: map-get($fontWeightData, 'regular');
+  font-family: map-get($fontFamilies, 'secondary');
+}
+
+@mixin h5-typography {
+  font-size: toREM(22px);
+  line-height: toEM(32px);
+  letter-spacing: normal;
+  font-weight: map-get($fontWeightData, 'regular');
+  font-family: map-get($fontFamilies, 'secondary');
+}
+
+@mixin h6-typography {
+  font-size: toREM(20px);
+  line-height: toEM(28px);
+  letter-spacing: normal;
+  font-weight: map-get($fontWeightData, 'regular');
+  font-family: map-get($fontFamilies, 'secondary');
+}
+
+@mixin subtitle-typography {
+  font-size: toREM(13px);
+  line-height: toEM(16px);
+  text-transform: uppercase;
+  letter-spacing: normal;
+  font-weight: map-get($fontWeightData, 'regular');
+  font-family: map-get($fontFamilies, 'primary');
+}
+
+@mixin body-typography {
+  font-size: toREM(17px);
+  line-height: toEM(24px);
+  letter-spacing: normal;
+  font-weight: map-get($fontWeightData, 'regular');
+  font-family: map-get($fontFamilies, 'primary');
+}
+
+@mixin button-typography {
+  font-size: toREM(16px);
+  line-height: toEM(24px);
+  text-transform: uppercase;
+  letter-spacing: normal;
+  font-weight: map-get($fontWeightData, 'semiBold');
+  font-family: map-get($fontFamilies, 'primary');
+}
+
+@mixin overline-typography {
+  font-size: toREM(11px);
+  line-height: toEM(16px);
+  text-transform: uppercase;
+  letter-spacing: 0.4;
+  font-weight: map-get($fontWeightData, 'light');
+  font-family: map-get($fontFamilies, 'primary');
+}
+
+@mixin bigData-typography {
+  font-size: toREM(40px);
+  line-height: toEM(48px);
+  letter-spacing: normal;
+  font-weight: map-get($fontWeightData, 'regular');
+  font-family: map-get($fontFamilies, 'primary');
+}
+
+@mixin subscript-typography {
+  font-size: toREM(13px);
+  line-height: toEM(16px);
+  letter-spacing: normal;
+  font-weight: map-get($fontWeightData, 'regular');
+  font-family: map-get($fontFamilies, 'primary');
+}

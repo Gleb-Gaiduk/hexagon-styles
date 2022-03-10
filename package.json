@@ -1,0 +1,15 @@
+{
+  "name": "hexagon-styles",
+  "version": "1.0.0",
+  "description": "Common styles repo for hexagon project.",
+  "main": "index.scss",
+  "scripts": {
+    "sass": "node-sass -w src/ -o css/ --recursive"
+  },
+  "keywords": [
+    "SCSS"
+  ],
+  "author": "Hleb Haiduk",
+  "license": "ISC",
+  "dependencies": {}
+}
