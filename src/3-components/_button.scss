@@ -4,6 +4,7 @@
 @import '../2-foundations/colors/functions';
 @import '../2-foundations/shadows/functions';
 @import '../2-foundations/shapes/shapes';
+@import '../2-foundations/border/border';
 
 @mixin button-base {
   @include button-typography;
