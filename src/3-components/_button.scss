@@ -1,4 +1,4 @@
-@import '../2-foundations/typography/mixins';
+@import '../2-foundations/typography/typography-dir';
 
 @mixin button-base {
   @include button-typography;
