@@ -4,7 +4,7 @@
 
 $color-data: (
   background: (
-    brandNeutral: theme-color-neutral-20,
+    brandNeutral: theme-color-neutral-30,
     brandPrimaryLight: $theme-color-primary-10,
     brandPrimary: $theme-color-primary-40,
     brandDark: $theme-color-primary-60,
@@ -13,36 +13,39 @@ $color-data: (
     negative: $theme-color-negative-10,
     warning: $theme-color-warning-10,
     info: $theme-color-info-10,
-    pageCover: rgba($theme-color-neutral-40, 0.75),
+    pageCover: rgba($theme-color-neutral-50, 0.75),
+    disabled: $theme-color-neutral-20,
     // Hover
-    brandNeutralHover: $theme-color-neutral-10,
+    brandNeutralHover: $theme-color-neutral-20,
     brandPrimaryLightHover: $theme-color-primary-0,
     brandPrimaryHover: $theme-color-primary-30,
     brandDarkHover: $theme-color-primary-50,
     brandDarkestHover: $theme-color-primary-70,
+    brandTransparentHover: $theme-color-neutral-20,
     positiveHover: $theme-color-positive-0,
     negativeHover: $theme-color-negative-0,
     warningHover: $theme-color-warning-0,
     infoHover: $theme-color-info-0,
     // Focus
-    brandNeutralFocus: $theme-color-neutral-40,
+    brandNeutralFocus: $theme-color-neutral-50,
     brandPrimaryLightFocus: $theme-color-primary-30,
     brandPrimaryFocus: $theme-color-primary-50,
     brandDarkFocus: $theme-color-primary-70,
     brandDarkestFocus: $theme-color-primary-70,
+    brandTransparentFocus: $theme-color-neutral-20,
     positiveFocus: $theme-color-positive-20,
     negativeFocus: $theme-color-negative-20,
     warningFocus: $theme-color-warning-20,
     infoFocus: $theme-color-info-20
   ),
   text: (
-    primaryRegular: $theme-color-neutral-60,
+    primaryRegular: $theme-color-neutral-70,
     primaryBold: $theme-color-primary-80,
     primaryRegularOnDark: $theme-color-neutral-10,
     primaryBoldOnDark: $theme-color-neutral-0,
     // Input
-    inputPlaceholder: $theme-color-neutral-30,
-    inputContent: $theme-color-neutral-50,
+    inputPlaceholder: $theme-color-neutral-40,
+    inputContent: $theme-color-neutral-60,
     // Positive
     positive: $theme-color-positive-10,
     // Negative
@@ -53,6 +56,7 @@ $color-data: (
     info: $theme-color-info-10
   ),
   border: (
-    primaryOnDark: $theme-color-neutral-0
+    primaryOnDark: $theme-color-neutral-0,
+    primaryOnLight: $theme-color-primary-60
   )
 ) !default;

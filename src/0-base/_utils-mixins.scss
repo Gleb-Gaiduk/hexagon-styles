@@ -1,6 +1,6 @@
-@mixin focus($outlineColor) {
-  outline: 2px outset $outlineColor;
-  outline-offset: 2px;
+@mixin focus {
+  outline: 3px outset #ffba42;
+  @content;
 }
 
 @mixin hover {

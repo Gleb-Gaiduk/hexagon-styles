@@ -1,0 +1,13 @@
+/// Returns the shadow for the specified elevation
+/// @param {String} $elevation [base] - The shadow's elevation.
+/// @return {List} The shadow value.
+
+@function select-shadow($level: 100) {
+  $fetched-value: map-get($shadows-data, $level);
+
+  @if type-of($fetched-value) == list {
+    @return $fetched-value;
+  } @else {
+    @error 'Shadow variant `#{$level}` not found. Available variants: #{$shadows-data}';
+  }
+}
