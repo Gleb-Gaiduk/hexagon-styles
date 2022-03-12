@@ -1,10 +1,12 @@
+@import '../../1-themes/default-theme';
+
 /*
   Public Colors - available for developers
 */
 
 $color-data: (
   background: (
-    brandNeutral: theme-color-neutral-30,
+    brandNeutral: $theme-color-neutral-30,
     brandPrimaryLight: $theme-color-primary-10,
     brandPrimary: $theme-color-primary-40,
     brandDark: $theme-color-primary-60,

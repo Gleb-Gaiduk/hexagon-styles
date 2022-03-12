@@ -1,7 +1,9 @@
-@import '../0-base/base-dir';
-@import '../2-foundations/typography/typography-dir';
-@import '../2-foundations/shapes/shapes-dir';
-@import '../2-foundations/border/border-dir';
+@import '../0-base/utils-functions';
+@import '../0-base/utils-mixins';
+@import '../2-foundations/typography/mixins';
+@import '../2-foundations/colors/functions';
+@import '../2-foundations/shadows/functions';
+@import '../2-foundations/shapes/shapes';
 
 @mixin button-base {
   @include button-typography;
