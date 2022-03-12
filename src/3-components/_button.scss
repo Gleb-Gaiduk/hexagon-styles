@@ -11,6 +11,13 @@
   min-width: 6.25rem;
   transition: 0.3s;
   border-radius: $shape-radius-sm;
+  height: 3.125rem;
+
+  @include for-phone-only {
+    min-width: 0;
+    display: flex;
+    height: 2.5rem;
+  }
 
   &:disabled {
     cursor: not-allowed;
