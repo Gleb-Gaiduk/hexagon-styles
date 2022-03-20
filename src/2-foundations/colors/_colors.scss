@@ -15,10 +15,10 @@ $color-data: (
     secondaryLight: $color-secondary-light,
     secondary: $color-secondary-default,
     secondaryDark: $color-secondary-dark,
-    positive: $theme-color-positive-10,
-    negative: $theme-color-negative-10,
-    warning: $theme-color-warning-10,
-    pageCover: rgba($theme-color-neutral-50, 0.75),
+    positive: $color-positive-10,
+    negative: $color-negative-10,
+    warning: $color-warning-10,
+    pageCover: rgba($color-neutral-50, 0.75),
     secondaryButtonOnLight: $color-neutral-60,
     // Hover
     neutralHover: $color-neutral-20,
@@ -31,22 +31,22 @@ $color-data: (
     secondaryButtonOnLightHover: $color-primary-light
   ),
   text: (
-    primaryRegular: $theme-color-neutral-80,
-    secondaryRegular: $theme-color-neutral-80,
-    primaryRegularOnDark: $theme-color-neutral-0,
+    primaryRegular: $color-neutral-80,
+    secondaryRegular: $color-neutral-80,
+    primaryRegularOnDark: $color-neutral-0,
     // Input
-    inputPlaceholder: $theme-color-neutral-40,
-    inputContent: $theme-color-neutral-70,
+    inputPlaceholder: $color-neutral-40,
+    inputContent: $color-neutral-70,
     // Positive
-    positive: $theme-color-positive-10,
+    positive: $color-positive-10,
     // Negative
-    negative: $theme-color-negative-10,
+    negative: $color-negative-10,
     // Warning
-    warning: $theme-color-warning-10
+    warning: $color-warning-10
   ),
   border: (
-    primaryOnDark: $theme-color-neutral-0,
+    primaryOnDark: $color-neutral-0,
     primaryOnLight: $color-primary-default,
-    primaryOnLightHover: $theme-color-neutral-0
+    primaryOnLightHover: $color-neutral-0
   )
 ) !default;
