@@ -61,7 +61,7 @@
   }
 
   &:disabled {
-    background-color: select-color(background, disabled);
+    background-color: select-color(background, primaryButtonDisabled);
   }
 }
 
