@@ -9,35 +9,33 @@
 @mixin button-base {
   @include button-typography;
 
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   border: none;
   cursor: pointer;
-  background-color: transparent;
   padding: 0.5333em 1em;
-  min-width: 6.25rem;
   transition: 0.3s;
   border-radius: $shape-radius-sm;
   height: 3.125rem;
 
-  @include for-phone-only {
-    min-width: 0;
-    display: flex;
-    height: 2.5rem;
+  @include media-breakpoint-up(sm) {
+    min-width: 6.25rem;
+    height: 3.4375rem;
+  }
+
+  @include hover {
+    box-shadow: select-shadow(300);
+  }
+
+  &:focus-visible {
+    @include focus {
+      box-shadow: select-shadow(300);
+    }
   }
 
   &:disabled {
     cursor: not-allowed;
-  }
-
-  @include hover {
-    background-color: select-color(background, brandNeutralHover);
-    color: select-color(text, primaryRegular);
-  }
-
-  &:focus-visible {
-    @include focus;
   }
 
   &:active:enabled {
@@ -49,17 +47,16 @@
 
 @mixin button-primary {
   color: select-color(text, primaryRegularOnDark);
-  background-color: select-color(background, brandDark);
+  background-color: select-color(background, primary);
 
   @include hover {
-    background-color: select-color(background, brandDarkHover);
+    background-color: select-color(background, primaryHover);
     box-shadow: select-shadow(300);
   }
 
   &:focus-visible {
     @include focus {
-      background-color: select-color(background, brandDarkFocus);
-      box-shadow: select-shadow(300);
+      background-color: select-color(background, primaryHover);
     }
   }
 
@@ -70,44 +67,66 @@
 
 @mixin button-secondary-on-light {
   color: select-color(text, primaryRegular);
-  background-color: transparent;
-  border: $border-thick solid select-color(border, primaryOnLight);
+  background-color: select-color(background, secondaryButtonOnLight);
+  border-color: select-color(border, primaryOnLight);
 
   @include hover {
-    color: select-color(text, primaryRegularOnDark);
-    background-color: select-color(background, brandTransparentHover);
-    border-color: select-color(border, primaryOnLight);
-    box-shadow: select-shadow(300);
+    background-color: select-color(background, secondaryButtonOnLightHover);
+    border-color: select-color(border, primaryOnLightHover);
   }
 
   &:focus-visible {
     @include focus {
-      color: select-color(text, primaryRegularOnDark);
-      background-color: select-color(background, brandTransparentFocus);
-      border-color: select-color(border, primaryOnLight);
-      box-shadow: select-shadow(300);
+      background-color: select-color(background, secondaryButtonOnLightHover);
+      border-color: select-color(border, primaryOnLightHover);
     }
   }
 }
 
 @mixin button-secondary-on-dark {
   color: select-color(text, primaryRegularOnDark);
-  background-color: select-color(background, brandNeutral);
+  background-color: transparent;
+  border-color: select-color(border, primaryOnDark);
   border: $border-thick solid select-color(border, primaryOnDark);
 
   @include hover {
-    color: select-color(text, primaryRegular);
-    background-color: select-color(background, brandNeutralHover);
-    border-color: select-color(border, primaryOnLight);
+    background-color: select-color(background, primary);
   }
 
   &:focus-visible {
     @include focus {
-      color: select-color(text, primaryRegular);
-      background-color: select-color(background, brandNeutralHover);
-      border-color: select-color(border, primaryOnLight);
+      background-color: select-color(background, primary);
     }
   }
+}
+
+@mixin button-size-sm {
+  height: 2.3125rem;
+
+  @include media-breakpoint-up(sm) {
+    height: 2.5rem;
+  }
+}
+
+@mixin button-size-md {
+  height: 2.8125rem;
+
+  @include media-breakpoint-up(sm) {
+    height: 3.125rem;
+  }
+}
+
+@mixin button-size-lg {
+  height: 3.4375rem;
+
+  @include media-breakpoint-up(sm) {
+    height: 3.75rem;
+  }
+}
+
+@mixin button-with-border {
+  border-style: solid;
+  border-width: $border-thick;
 }
 
 @keyframes scale-up-center {

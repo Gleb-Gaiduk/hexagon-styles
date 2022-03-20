@@ -1,4 +1,5 @@
 @import '../../1-themes/default-theme';
+@import '../../0-base/utils-mixins';
 
 /*
   Public Colors - available for developers
@@ -6,59 +7,46 @@
 
 $color-data: (
   background: (
-    brandNeutral: $theme-color-neutral-30,
-    brandPrimaryLight: $theme-color-primary-10,
-    brandPrimary: $theme-color-primary-40,
-    brandDark: $theme-color-primary-60,
-    brandDarkest: $theme-color-primary-80,
+    neutral: $color-neutral-0,
+    neutralDark: $color-neutral-20,
+    primaryLight: $color-primary-light,
+    primary: $color-primary-default,
+    primaryDark: $color-primary-dark,
+    secondaryLight: $color-secondary-light,
+    secondary: $color-secondary-default,
+    secondaryDark: $color-secondary-dark,
     positive: $theme-color-positive-10,
     negative: $theme-color-negative-10,
     warning: $theme-color-warning-10,
-    info: $theme-color-info-10,
     pageCover: rgba($theme-color-neutral-50, 0.75),
-    disabled: $theme-color-neutral-20,
+    secondaryButtonOnLight: $color-neutral-60,
     // Hover
-    brandNeutralHover: $theme-color-neutral-20,
-    brandPrimaryLightHover: $theme-color-primary-0,
-    brandPrimaryHover: $theme-color-primary-30,
-    brandDarkHover: $theme-color-primary-50,
-    brandDarkestHover: $theme-color-primary-70,
-    brandTransparentHover: $theme-color-neutral-20,
-    positiveHover: $theme-color-positive-0,
-    negativeHover: $theme-color-negative-0,
-    warningHover: $theme-color-warning-0,
-    infoHover: $theme-color-info-0,
-    // Focus
-    brandNeutralFocus: $theme-color-neutral-50,
-    brandPrimaryLightFocus: $theme-color-primary-30,
-    brandPrimaryFocus: $theme-color-primary-50,
-    brandDarkFocus: $theme-color-primary-70,
-    brandDarkestFocus: $theme-color-primary-70,
-    brandTransparentFocus: $theme-color-neutral-20,
-    positiveFocus: $theme-color-positive-20,
-    negativeFocus: $theme-color-negative-20,
-    warningFocus: $theme-color-warning-20,
-    infoFocus: $theme-color-info-20
+    neutralHover: $color-neutral-20,
+    primaryLightHover: rgba($color-primary-light, 0.8),
+    primaryHover: rgba($color-primary-default, 0.8),
+    primaryDarkHover: rgba($color-primary-dark, 0.8),
+    secondaryLightHover: rgba($color-secondary-light, 0.8),
+    secondaryHover: rgba($color-secondary-default, 0.8),
+    secondaryDarkHover: rgba($color-secondary-dark, 0.8),
+    secondaryButtonOnLightHover: $color-primary-light
   ),
   text: (
-    primaryRegular: $theme-color-neutral-70,
-    primaryBold: $theme-color-primary-80,
-    primaryRegularOnDark: $theme-color-neutral-10,
-    primaryBoldOnDark: $theme-color-neutral-0,
+    primaryRegular: $theme-color-neutral-80,
+    secondaryRegular: $theme-color-neutral-80,
+    primaryRegularOnDark: $theme-color-neutral-0,
     // Input
     inputPlaceholder: $theme-color-neutral-40,
-    inputContent: $theme-color-neutral-60,
+    inputContent: $theme-color-neutral-70,
     // Positive
     positive: $theme-color-positive-10,
     // Negative
     negative: $theme-color-negative-10,
     // Warning
-    warning: $theme-color-warning-10,
-    // Info
-    info: $theme-color-info-10
+    warning: $theme-color-warning-10
   ),
   border: (
     primaryOnDark: $theme-color-neutral-0,
-    primaryOnLight: $theme-color-primary-60
+    primaryOnLight: $color-primary-default,
+    primaryOnLightHover: $theme-color-neutral-0
   )
 ) !default;

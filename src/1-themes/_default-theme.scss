@@ -1,42 +1,34 @@
-/**
-Color Palette Light
-0 -> 100 means light to dark palette
-**/
+$color-primary-light: #c89089;
+$color-primary-default: #96625c;
+$color-primary-dark: #663733;
 
-$theme-color-primary-0: #cb9b8b;
-$theme-color-primary-10: #c5907f;
-$theme-color-primary-20: #b18e82;
-$theme-color-primary-30: #d99e8c;
-$theme-color-primary-40: #a18176;
-$theme-color-primary-50: #96625c;
-$theme-color-primary-60: #885955;
-$theme-color-primary-70: #6a4a4b;
-$theme-color-primary-80: #604344;
+$color-secondary-light: #ffdd76;
+$color-secondary-default: #d2ac47;
+$color-secondary-dark: #9e7d14;
 
-$theme-color-secondary-0: #7fb4c5;
-$theme-color-secondary-10: #5c9fb5;
+$color-accent-creme: #fcf0e2;
+$color-accent-light-green: #eef6ec;
+$color-accent-light-pink: #feeef2;
+$color-accent-red: #ff2424;
 
-$theme-color-neutral-0: #ffffff;
-$theme-color-neutral-10: #fffffc;
-$theme-color-neutral-20: #c8c8c84d;
-$theme-color-neutral-30: #f1f1e5;
-$theme-color-neutral-40: #aaaaaa;
-$theme-color-neutral-50: #999999;
-$theme-color-neutral-60: #555555;
-$theme-color-neutral-70: #403031;
+$color-neutral-0: #ffffff;
+$color-neutral-10: #fafafa;
+$color-neutral-20: #f5f9fd;
+$color-neutral-30: #f5f5f5;
+$color-neutral-40: #eeeeee;
+$color-neutral-50: #e0e0e0;
+$color-neutral-60: #bdbdbd;
+$color-neutral-70: #868686;
+$color-neutral-80: #000000;
 
-$theme-color-positive-0: #9bc18f;
-$theme-color-positive-10: #70a65e;
-$theme-color-positive-20: #59874a;
+$color-positive-0: #9bc18f;
+$color-positive-10: #70a65e;
+$color-positive-20: #59874a;
 
-$theme-color-negative-0: #f77e75;
-$theme-color-negative-10: #f44336;
-$theme-color-negative-20: #ea1c0d;
+$color-negative-0: #f77e75;
+$color-negative-10: #f44336;
+$color-negative-20: #ea1c0d;
 
-$theme-color-warning-0: #f4bd77;
-$theme-color-warning-10: #ee9626;
-$theme-color-warning-20: #d17c10;
-
-$theme-color-info-0: #d5d5b1;
-$theme-color-info-10: #c4c492;
-$theme-color-info-20: #b2b271;
+$color-warning-0: #f4bd77;
+$color-warning-10: #ee9626;
+$color-warning-20: #d17c10;

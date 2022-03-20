@@ -1,33 +1,38 @@
 @import '../../0-base/utils-functions';
+@import '../../0-base/utils-mixins';
 @import './typography';
 
 @mixin h1-typography {
-  font-size: toREM(56px);
-  line-height: toEM(72px);
+  @include adaptiveValue('font-size', 56, 49);
+  @include adaptiveValue('line-height', 72, 63);
+
   letter-spacing: normal;
   font-weight: map-get($fontWeightData, 'regular');
   font-family: map-get($fontFamilies, 'secondary');
 }
 
 @mixin h2-typography {
-  font-size: toREM(40px);
-  line-height: toEM(56px);
+  @include adaptiveValue('font-size', 45, 40);
+  @include adaptiveValue('line-height', 56, 49);
+
   letter-spacing: normal;
   font-weight: map-get($fontWeightData, 'regular');
   font-family: map-get($fontFamilies, 'secondary');
 }
 
 @mixin h3-typography {
-  font-size: toREM(28px);
-  line-height: toEM(40px);
+  @include adaptiveValue('font-size', 28, 24.5);
+  @include adaptiveValue('line-height', 40, 35);
+
   letter-spacing: normal;
   font-weight: map-get($fontWeightData, 'regular');
   font-family: map-get($fontFamilies, 'secondary');
 }
 
 @mixin h4-typography {
-  font-size: toREM(26px);
-  line-height: toEM(32px);
+  @include adaptiveValue('font-size', 26, 22.75);
+  @include adaptiveValue('line-height', 32, 28);
+
   letter-spacing: normal;
   font-weight: map-get($fontWeightData, 'regular');
   font-family: map-get($fontFamilies, 'secondary');
