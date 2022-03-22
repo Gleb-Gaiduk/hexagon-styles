@@ -39,16 +39,18 @@
 }
 
 @mixin h5-typography {
-  font-size: toREM(22px);
-  line-height: toEM(32px);
+  @include adaptiveValue('font-size', 22, 19.25);
+  @include adaptiveValue('line-height', 32, 28);
+
   letter-spacing: normal;
   font-weight: map-get($fontWeightData, 'regular');
   font-family: map-get($fontFamilies, 'secondary');
 }
 
 @mixin h6-typography {
-  font-size: toREM(20px);
-  line-height: toEM(28px);
+  @include adaptiveValue('font-size', 20, 17.5);
+  @include adaptiveValue('line-height', 28, 24.5);
+
   letter-spacing: normal;
   font-weight: map-get($fontWeightData, 'regular');
   font-family: map-get($fontFamilies, 'secondary');
