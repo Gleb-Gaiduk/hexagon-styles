@@ -72,11 +72,11 @@
 }
 
 @mixin button-typography {
-  font-size: toREM(16px);
-  line-height: toEM(24px);
+  font-size: toREM(14px);
+  line-height: toEM(22px);
   text-transform: uppercase;
   letter-spacing: normal;
-  font-weight: map-get($fontWeightData, 'semiBold');
+  font-weight: map-get($fontWeightData, 'bold');
   font-family: map-get($fontFamilies, 'primary');
 }
 
