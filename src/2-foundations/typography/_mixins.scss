@@ -75,7 +75,7 @@
   font-size: toREM(14px);
   line-height: toEM(22px);
   text-transform: uppercase;
-  letter-spacing: normal;
+  letter-spacing: 0.5px;
   font-weight: map-get($fontWeightData, 'bold');
   font-family: map-get($fontFamilies, 'primary');
 }
