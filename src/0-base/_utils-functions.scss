@@ -32,7 +32,7 @@
     @return $value;
   } @else if $unit == 'rem' {
     @return $value / 1rem * 1em *
-      ($theme-base-font-size / $default-browser-font-size);
+      ($theme_base_font_size / $default-browser-font-size);
   } @else if $unit == 'px' {
     @return $value / $default-browser-font-size * 1em;
   } @else {

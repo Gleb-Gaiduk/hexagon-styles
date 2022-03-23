@@ -8,7 +8,7 @@
 
   letter-spacing: normal;
   font-weight: map-get($fontWeightData, 'regular');
-  font-family: map-get($fontFamilies, 'secondary');
+  font-family: $primary_font_family;
 }
 
 @mixin h2-typography {
@@ -17,7 +17,7 @@
 
   letter-spacing: normal;
   font-weight: map-get($fontWeightData, 'regular');
-  font-family: map-get($fontFamilies, 'secondary');
+  font-family: $primary_font_family;
 }
 
 @mixin h3-typography {
@@ -26,7 +26,7 @@
 
   letter-spacing: normal;
   font-weight: map-get($fontWeightData, 'regular');
-  font-family: map-get($fontFamilies, 'secondary');
+  font-family: $primary_font_family;
 }
 
 @mixin h4-typography {
@@ -35,7 +35,7 @@
 
   letter-spacing: normal;
   font-weight: map-get($fontWeightData, 'regular');
-  font-family: map-get($fontFamilies, 'secondary');
+  font-family: $primary_font_family;
 }
 
 @mixin h5-typography {
@@ -44,7 +44,7 @@
 
   letter-spacing: normal;
   font-weight: map-get($fontWeightData, 'semiBold');
-  font-family: map-get($fontFamilies, 'secondary');
+  font-family: $primary_font_family;
 }
 
 @mixin h6-typography {
@@ -53,7 +53,7 @@
 
   letter-spacing: normal;
   font-weight: map-get($fontWeightData, 'semiBold');
-  font-family: map-get($fontFamilies, 'secondary');
+  font-family: $primary_font_family;
 }
 
 @mixin subtitle-typography {
@@ -62,7 +62,7 @@
   text-transform: uppercase;
   letter-spacing: normal;
   font-weight: map-get($fontWeightData, 'regular');
-  font-family: map-get($fontFamilies, 'primary');
+  font-family: $primary_font_family;
 }
 
 @mixin body-typography {
@@ -70,7 +70,7 @@
   line-height: toEM(24px);
   letter-spacing: normal;
   font-weight: map-get($fontWeightData, 'regular');
-  font-family: map-get($fontFamilies, 'primary');
+  font-family: $primary_font_family;
 }
 
 @mixin button-typography {
@@ -78,7 +78,7 @@
   line-height: toEM(22px);
   text-transform: uppercase;
   font-weight: map-get($fontWeightData, 'bold');
-  font-family: map-get($fontFamilies, 'primary');
+  font-family: $primary_font_family;
 }
 
 @mixin overline-typography {
@@ -87,7 +87,7 @@
   text-transform: uppercase;
   letter-spacing: 0.4;
   font-weight: map-get($fontWeightData, 'light');
-  font-family: map-get($fontFamilies, 'primary');
+  font-family: $primary_font_family;
 }
 
 @mixin bigData-typography {
@@ -95,7 +95,7 @@
   line-height: toEM(48px);
   letter-spacing: normal;
   font-weight: map-get($fontWeightData, 'regular');
-  font-family: map-get($fontFamilies, 'primary');
+  font-family: $primary_font_family;
 }
 
 @mixin subscript-typography {
@@ -103,5 +103,5 @@
   line-height: toEM(16px);
   letter-spacing: normal;
   font-weight: map-get($fontWeightData, 'regular');
-  font-family: map-get($fontFamilies, 'primary');
+  font-family: $primary_font_family;
 }
