@@ -43,7 +43,7 @@
   @include adaptiveValue('line-height', 32, 28);
 
   letter-spacing: normal;
-  font-weight: map-get($fontWeightData, 'regular');
+  font-weight: map-get($fontWeightData, 'semiBold');
   font-family: map-get($fontFamilies, 'secondary');
 }
 
@@ -52,7 +52,7 @@
   @include adaptiveValue('line-height', 28, 24.5);
 
   letter-spacing: normal;
-  font-weight: map-get($fontWeightData, 'regular');
+  font-weight: map-get($fontWeightData, 'semiBold');
   font-family: map-get($fontFamilies, 'secondary');
 }
 
@@ -77,7 +77,6 @@
   font-size: toREM(14px);
   line-height: toEM(22px);
   text-transform: uppercase;
-  letter-spacing: 0.5px;
   font-weight: map-get($fontWeightData, 'bold');
   font-family: map-get($fontFamilies, 'primary');
 }
