@@ -56,18 +56,35 @@
   font-family: $primary_font_family;
 }
 
-@mixin subtitle-typography {
-  font-size: toREM(13px);
-  line-height: toEM(16px);
-  text-transform: uppercase;
+@mixin body-typography-md {
+  @include adaptiveValue('font-size', 17, 15);
+  @include adaptiveValue('line-height', 24, 21);
+
   letter-spacing: normal;
   font-weight: map-get($fontWeightData, 'regular');
   font-family: $primary_font_family;
 }
 
-@mixin body-typography {
-  font-size: toREM(17px);
-  line-height: toEM(24px);
+@mixin body-typography-sm {
+  @include adaptiveValue('font-size', 15, 14);
+  @include adaptiveValue('line-height', 22, 20);
+
+  letter-spacing: normal;
+  font-weight: map-get($fontWeightData, 'regular');
+  font-family: $primary_font_family;
+}
+
+@mixin subscript-typography-md {
+  font-weight: 0.875rem;
+  line-height: 1.125rem;
+  letter-spacing: normal;
+  font-weight: map-get($fontWeightData, 'regular');
+  font-family: $primary_font_family;
+}
+
+@mixin subscript-typography-sm {
+  font-weight: 0.8125rem;
+  line-height: 1rem;
   letter-spacing: normal;
   font-weight: map-get($fontWeightData, 'regular');
   font-family: $primary_font_family;
@@ -75,33 +92,25 @@
 
 @mixin button-typography {
   font-size: toREM(14px);
-  line-height: toEM(22px);
   text-transform: uppercase;
   font-weight: map-get($fontWeightData, 'bold');
   font-family: $primary_font_family;
 }
 
 @mixin overline-typography {
-  font-size: toREM(11px);
-  line-height: toEM(16px);
+  @include adaptiveValue('font-size', 16, 14);
+  @include adaptiveValue('line-height', 27, 23);
+
   text-transform: uppercase;
   letter-spacing: 0.4;
   font-weight: map-get($fontWeightData, 'light');
   font-family: $primary_font_family;
 }
 
-@mixin bigData-typography {
-  font-size: toREM(40px);
-  line-height: toEM(48px);
-  letter-spacing: normal;
-  font-weight: map-get($fontWeightData, 'regular');
-  font-family: $primary_font_family;
-}
-
-@mixin subscript-typography {
-  font-size: toREM(13px);
-  line-height: toEM(16px);
-  letter-spacing: normal;
-  font-weight: map-get($fontWeightData, 'regular');
-  font-family: $primary_font_family;
-}
+// @mixin bigData-typography {
+//   font-size: toREM(40px);
+//   line-height: toEM(48px);
+//   letter-spacing: normal;
+//   font-weight: map-get($fontWeightData, 'regular');
+//   font-family: $primary_font_family;
+// }
