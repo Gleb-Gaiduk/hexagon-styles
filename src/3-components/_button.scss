@@ -45,12 +45,13 @@
 
 @mixin icon-button {
   border-radius: 50%;
-  min-width: unset;
+  min-width: 1.375rem;
+  min-height: 1.375rem;
   height: unset;
   padding: 1rem;
 
   @include media-breakpoint-up(md) {
-    min-width: unset;
+    min-width: 1.375rem;
     height: unset;
     padding: 0.625rem;
   }
