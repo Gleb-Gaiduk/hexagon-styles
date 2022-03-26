@@ -60,6 +60,11 @@
     box-shadow: unset;
     transform: translateY(-0.3125rem);
   }
+
+  &:active:enabled {
+    animation: none;
+    transform: translateY(0);
+  }
 }
 
 @mixin button-primary {
