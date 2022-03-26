@@ -1,4 +1,5 @@
 @import '../../1-themes/default-theme';
+@import './functions';
 
 /*
   Public Colors - available for developers
@@ -50,6 +51,8 @@ $color-data: (
     primaryOnLightHover: $color-neutral-0
   ),
   icon: (
-    headerOnLight: $color-secondary-default
+    headerOnLight: $color-secondary-default,
+    counterBackground: $color-primary-light,
+    counterColor: select-color(text, primaryRegularOnDark)
   )
 ) !default;

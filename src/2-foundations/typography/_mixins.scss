@@ -75,7 +75,7 @@
 }
 
 @mixin subscript-typography-md {
-  font-weight: 0.875rem;
+  font-size: toRem(14px);
   line-height: 1.125rem;
   letter-spacing: normal;
   font-weight: map-get($fontWeightData, 'regular');
@@ -83,10 +83,17 @@
 }
 
 @mixin subscript-typography-sm {
-  font-weight: 0.8125rem;
+  font-size: toREM(13px);
   line-height: 1rem;
   letter-spacing: normal;
   font-weight: map-get($fontWeightData, 'regular');
+  font-family: $primary_font_family;
+}
+
+@mixin subscript-typography-xs {
+  font-size: toREM(11px);
+  letter-spacing: normal;
+  font-weight: map-get($fontWeightData, 'bold');
   font-family: $primary_font_family;
 }
 
