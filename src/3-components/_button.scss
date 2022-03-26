@@ -43,6 +43,24 @@
   }
 }
 
+@mixin icon-button {
+  border-radius: 50%;
+  min-width: unset;
+  height: unset;
+  padding: 1rem;
+
+  @include media-breakpoint-up(md) {
+    min-width: unset;
+    height: unset;
+    padding: 0.625rem;
+  }
+
+  @include hover {
+    box-shadow: unset;
+    transform: translateY(-0.3125rem);
+  }
+}
+
 @mixin button-primary {
   color: select-color(text, primaryRegularOnDark);
   background-color: select-color(background, primary);
