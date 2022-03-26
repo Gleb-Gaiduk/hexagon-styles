@@ -48,5 +48,8 @@ $color-data: (
     primaryOnDark: $color-neutral-0,
     primaryOnLight: $color-primary-default,
     primaryOnLightHover: $color-neutral-0
+  ),
+  icon: (
+    headerOnLight: $color-secondary-default
   )
 ) !default;

@@ -40,7 +40,6 @@
     outline: none;
     outline-offset: 0;
     animation: scale-up-center 0.3s both;
-    transition: transform 0.1s;
   }
 }
 
@@ -51,6 +50,10 @@
   height: unset;
   padding: 1rem;
 
+  svg {
+    fill: select-color(icon, headerOnLight);
+  }
+
   @include media-breakpoint-up(md) {
     min-width: 1.375rem;
     height: unset;
@@ -60,6 +63,7 @@
   @include hover {
     box-shadow: unset;
     transform: translateY(-0.3125rem);
+    transition: transform 0.1s;
   }
 
   &:active:enabled {
