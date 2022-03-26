@@ -40,6 +40,7 @@
     outline: none;
     outline-offset: 0;
     animation: scale-up-center 0.3s both;
+    transition: transform 0.1s;
   }
 }
 
