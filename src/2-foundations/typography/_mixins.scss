@@ -93,6 +93,7 @@
 @mixin subscript-typography-xs {
   font-size: toREM(11px);
   letter-spacing: normal;
+  line-height: normal;
   font-weight: map-get($fontWeightData, 'bold');
   font-family: $primary_font_family;
 }
